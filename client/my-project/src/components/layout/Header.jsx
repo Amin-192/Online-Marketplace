@@ -73,9 +73,16 @@ export default function Header({ cartCount }) {
               {/* Account Modal */}
               {isAccountModalOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg">
-                  <button className="block w-full px-4 py-2 text-black hover:bg-gray-100 text-center">
-                    Sign In
-                  </button>
+                  <Link to="/login">
+                    <button className="block w-full px-4 py-2 text-black hover:bg-gray-100 text-center">
+                      Sign In
+                    </button>
+                  </Link>
+                  <Link to="/register">
+                    <button className="block w-full px-4 py-2 text-black hover:bg-gray-100 text-center">
+                      Register
+                    </button>
+                  </Link>
                 </div>
               )}
             </div>
